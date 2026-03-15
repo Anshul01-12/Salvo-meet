@@ -6,7 +6,7 @@
     "frontend": "cd frontend && npm start",
     "backend": "cd backend && npm start",
     "dev": "cd frontend && npm start",
-    "build": ""build": "npm run build"",
+    "build": "npm run build"
     "start": "cd backend && npm start"
   },
   "keywords": ["dating", "salvo-meet"],
