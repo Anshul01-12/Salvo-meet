@@ -6,11 +6,7 @@
     "frontend": "cd frontend && npm start",
     "backend": "cd backend && npm start",
     "dev": "cd frontend && npm start",
-<<<<<<< HEAD
     "build": "react-scripts build",
-=======
-    "build": "npm run build"
->>>>>>> e6bccfea5c5a0813e613b7411d269427672755c6
     "start": "cd backend && npm start"
   },
   "keywords": ["dating", "salvo-meet"],
