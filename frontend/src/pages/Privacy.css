@@ -1,0 +1,191 @@
+/* ===== PRIVACY HERO ===== */
+.privacy-hero {
+  background: linear-gradient(135deg, var(--pink-dark), var(--pink-primary));
+  padding: 140px 0 80px;
+  text-align: center;
+  color: white;
+}
+
+.privacy-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.privacy-hero h1 span {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.privacy-hero p {
+  font-size: 1.15rem;
+  opacity: 0.9;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* ===== PRIVACY HIGHLIGHTS ===== */
+.privacy-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.privacy-highlight-card {
+  text-align: center;
+  padding: 40px 30px;
+  background: var(--bg-light);
+  border-radius: var(--radius-lg);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.privacy-highlight-card:hover {
+  border-color: var(--pink-light);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.ph-icon {
+  font-size: 2.5rem;
+  color: var(--pink-primary);
+  margin-bottom: 16px;
+}
+
+.privacy-highlight-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.privacy-highlight-card p {
+  color: var(--text-gray);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ===== PRIVACY CONTENT ===== */
+.privacy-content-section {
+  background: var(--bg-light);
+}
+
+.privacy-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.privacy-block {
+  background: white;
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  margin-bottom: 24px;
+  border: 1px solid #f0f0f0;
+}
+
+.privacy-block-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: var(--pink-soft);
+  color: var(--pink-primary);
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.privacy-block h2 {
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+  color: var(--text-dark);
+}
+
+.privacy-block p {
+  color: var(--text-gray);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.privacy-block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.privacy-block li {
+  padding: 10px 0 10px 24px;
+  color: var(--text-gray);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  position: relative;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+.privacy-block li:last-child {
+  border-bottom: none;
+}
+
+.privacy-block li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 18px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--pink-primary);
+}
+
+.contact-info {
+  background: var(--bg-light);
+  padding: 20px 24px;
+  border-radius: var(--radius);
+  margin: 16px 0;
+}
+
+.contact-info p {
+  margin-bottom: 8px;
+  color: var(--text-dark);
+}
+
+.privacy-update {
+  font-size: 0.85rem !important;
+  color: var(--text-light) !important;
+  font-style: italic;
+}
+
+/* ===== PRIVACY CTA ===== */
+.privacy-cta {
+  padding: 80px 0;
+}
+
+.privacy-cta-content {
+  text-align: center;
+}
+
+.privacy-cta-content h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.privacy-cta-content h2 span {
+  color: var(--pink-primary);
+}
+
+.privacy-cta-content p {
+  color: var(--text-gray);
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .privacy-hero h1 { font-size: 2rem; }
+  .privacy-highlights { grid-template-columns: 1fr; }
+  .privacy-block { padding: 25px 20px; }
+  .privacy-cta-content h2 { font-size: 1.6rem; }
+}

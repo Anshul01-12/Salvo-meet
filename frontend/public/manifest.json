@@ -1,0 +1,15 @@
+{
+  "short_name": "Salvo Meet",
+  "name": "Salvo Meet - Dating & Video Chat",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#E91E63",
+  "background_color": "#ffffff"
+}
