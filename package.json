@@ -9,7 +9,13 @@
     "build": "react-scripts build",
     "start": "cd backend && npm start"
   },
-  "keywords": ["dating", "salvo-meet"],
+  "keywords": [
+    "dating",
+    "salvo-meet"
+  ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "react-scripts": "^5.0.1"
+  }
 }

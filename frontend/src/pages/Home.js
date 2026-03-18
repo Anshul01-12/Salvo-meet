@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiDownload, FiStar, FiUsers, FiShield, FiHeart, FiVideo, FiMessageCircle, FiZap, FiMapPin, FiArrowRight } from 'react-icons/fi';
+import { FiDownload, FiStar, FiUsers, FiShield, FiHeart, FiVideo, FiMessageCircle, FiZap, FiMapPin, FiArrowRight, FiCpu, FiTarget, FiTrendingUp } from 'react-icons/fi';
 import './Home.css';
 
 const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.dating.datingworld&pcampaignid=web_share';
@@ -24,6 +24,73 @@ const Home = () => {
 
   return (
     <div className="home">
+
+      {/* AI Matchmaking Promo Section — top of page */}
+      <section className="ai-promo-section">
+        <div className="ai-promo-bg">
+          <div className="ai-promo-blob blob-1"></div>
+          <div className="ai-promo-blob blob-2"></div>
+        </div>
+        <div className="container ai-promo-container">
+          {/* Left: Text */}
+          <div className="ai-promo-text">
+            <div className="ai-promo-badge">
+              <FiCpu /> AI-Powered Matchmaking
+            </div>
+            <h2>We Don't Guess.<br /><span>Our AI Knows.</span></h2>
+            <p>
+              Salvo Meet uses advanced AI to analyze your personality, interests, and behavior to find people who truly click with you — not just random profiles.
+            </p>
+            <ul className="ai-promo-points">
+              <li><FiTarget /> Personality-based compatibility scoring</li>
+              <li><FiTrendingUp /> Learns from your likes & dislikes</li>
+              <li><FiShield /> Only verified, genuine profiles shown</li>
+            </ul>
+            <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+              <FiDownload /> Try AI Matchmaking
+            </a>
+          </div>
+
+          {/* Right: Visual */}
+          <div className="ai-promo-visual">
+            <div className="ai-visual-center">
+              <FiCpu className="ai-visual-icon" />
+              <span>AI Engine</span>
+            </div>
+            <div className="ai-orbit orbit-1">
+              <div className="ai-orbit-card">
+                <div className="aoc-avatar">P</div>
+                <div className="aoc-info">
+                  <strong>Priya, 23</strong>
+                  <span className="aoc-match">96% Match</span>
+                </div>
+              </div>
+            </div>
+            <div className="ai-orbit orbit-2">
+              <div className="ai-orbit-card">
+                <div className="aoc-avatar">A</div>
+                <div className="aoc-info">
+                  <strong>Ananya, 25</strong>
+                  <span className="aoc-match">89% Match</span>
+                </div>
+              </div>
+            </div>
+            <div className="ai-orbit orbit-3">
+              <div className="ai-orbit-card">
+                <div className="aoc-avatar">N</div>
+                <div className="aoc-info">
+                  <strong>Neha, 22</strong>
+                  <span className="aoc-match">82% Match</span>
+                </div>
+              </div>
+            </div>
+            <div className="ai-conn-line line-1"></div>
+            <div className="ai-conn-line line-2"></div>
+            <div className="ai-conn-line line-3"></div>
+          </div>
+        </div>
+      </section>
+
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-bg-shapes">
